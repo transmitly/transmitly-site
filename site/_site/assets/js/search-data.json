@@ -1,0 +1,51 @@
+{"0": {
+    "doc": "Transmit.ly",
+    "title": "Messaging that scales with your app.",
+    "content": "Design messaging once, deliver across Email / SMS / Voice / Push with pipelines, templates, and delivery reports built in. View on GitHub Get started Channels Email / SMS / Voice / Push Provider agnostic Swap SMTP, SendGrid, Twilio, Infobip, Firebase Templates Fluid or Scriban, defined once per intent Delivery playbook . Pipeline &rarr; Provider &rarr; Delivery . Define the pipeline . Compose channel + template once per intent. Pick the provider . Start with SMTP; swap SendGrid, Twilio, Infobip, Firebase in a central location. Dispatch & observe . Send from your app and collect delivery reports with ease. Vendor-agnostic, template-friendly, and ready for your stack. ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"1": {
+    "doc": "Transmit.ly",
+    "title": "Why teams pick Transmitly",
+    "content": "Strategy first . Pipeline-driven delivery . Centralize how each communication is composed and dispatched across channels. Adapter friendly . No provider lock-in . Switch from SMTP to SendGrid, Twilio or Infobip without touching your business logic. Visibility . Track every delivery . Capture delivery reports from providers and route them into your logs, alerts, or dashboards. ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"2": {
+    "doc": "Transmit.ly",
+    "title": "Get started in minutes",
+    "content": ". | InstallBring in Transmitly (and the SMTP provider to start). | Wire a providerAdd your host, credentials, and defaults. | Declare a pipelineDefine channels and templates for your intent. | DispatchSend and observe with delivery reports. | . dotnet CLI . dotnet add package Transmitlydotnet add package Transmitly.ChannelProvider.Smtp Configure &amp; dispatch . {% highlight csharp %} using Transmitly; ICommunicationsClient communicationsClient = new CommunicationsClientBuilder() .AddSmtpSupport(options => { options.Host = \"smtp.example.com\"; options.Port = 587; options.UserName = \"MySMTPUsername\"; options.Password = \"MyPassword\"; }) .AddPipeline(\"WelcomeKit\", pipeline => { pipeline.AddEmail(\"welcome@my.app\".AsIdentityAddress(\"Welcome Committee\"), email => { email.Subject.AddStringTemplate(\"Thanks for creating an account!\"); email.HtmlBody.AddStringTemplate(\"Check out the Getting Started section to see all the cool things you can do!\"); email.TextBody.AddStringTemplate(\"Check out the Getting Started (https://my.app/getting-started) section to see all the cool things you can do!\"); }); }) .BuildClient(); builder.Services.AddSingleton(communicationsClient); // Later in your app: dispatch by pipeline name and recipient address var result = await communicationsClient.DispatchAsync(\"WelcomeKit\", \"newuser@example.com\", new { }); {% endhighlight %} Swap providers or adjust templates in one place—your app code stays clean. Learn how to change providers. ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"3": {
+    "doc": "Transmit.ly",
+    "title": "Samples to the ideas flowing",
+    "content": "Kitchen Sink (ASP.NET Core API) . All channels (Email/SMS/Voice/Push) with SMTP, SendGrid, Twilio, Infobip, Firebase, delivery reports, channel-provider restrictions, and Fluid templates. View sample Microservices . Extend the communications client with remote/embedded templates, persona filters, multi-tenant “from” resolution, and delivery reports across services. View sample Logger provider . A minimal provider that logs all channels—great for local testing and debugging dispatch behavior. View sample ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"4": {
+    "doc": "Transmit.ly",
+    "title": "Product checklist",
+    "content": "Operational confidence . Ship with pipelines, delivery reports, and templates defined in one place. Friendly for builders . Readable APIs, clear defaults, and examples to unblock your team fast. Community powered . Open source roadmap, issues, and discussions in GitHub to shape what ships next. Open Source . Start dispatching today . ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"5": {
+    "doc": "Transmit.ly",
+    "title": "Drop Transmitly into your stack and keep building your app.",
+    "content": "&nbsp; . Open GitHub Follow the quickstart ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"6": {
+    "doc": "Transmit.ly",
+    "title": "Transmit.ly",
+    "content": "xxxxx Apache 2.0 ",
+    "url": "/",
+    
+    "relUrl": "/"
+  }
+}
