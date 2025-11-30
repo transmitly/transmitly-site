@@ -68,11 +68,11 @@ image: /assets/images/oss-icon-dark.png
   <div class="tl-hero__grid">
     <div class="tl-hero__brand tl-hero__brand--stacked">
       <img src="/assets/images/oss-icon-dark.png" alt="Transmitly OSS logo">
-      <h1>Messaging that scales with your app.</h1>
+      <h1>Transactional communciations that scale with your app.</h1>
     </div>
     <div class="tl-hero__grid-inner">
       <div class="tl-hero__copy">
-      <p class="tl-lede">Design messaging once, deliver across Email / SMS / Voice / Push with pipelines, templates, and delivery reports built in.</p>
+      <p class="tl-lede">Design communications once, deliver across Email / SMS / Voice / Push with pipelines, templates, and delivery reports built in.</p>
       <div class="tl-cta">
         <a class="btn btn-primary tl-btn-icon" href="https://github.com/transmitly/transmitly">
           <span class="tl-icon tl-icon--github" aria-hidden="true"></span> View on GitHub
