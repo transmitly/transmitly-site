@@ -82,15 +82,15 @@ image: /assets/images/oss-icon-dark.png
       <div class="tl-meta">
         <div class="tl-meta__item">
           <span>Channels</span>
-          <strong>Email / SMS / Voice / Push</strong>
+          <strong>Email, SMS, Voice, Push</strong>
         </div>
         <div class="tl-meta__item">
           <span>Provider agnostic</span>
-          <strong>Swap SMTP, SendGrid, Twilio, Infobip, Firebase</strong>
+          <strong>Easily swap between SMTP, SendGrid, Twilio, Infobip, Firebase</strong>
         </div>
         <div class="tl-meta__item">
           <span>Templates</span>
-          <strong>Fluid or Scriban, defined once per intent</strong>
+          <strong>Fluid, Scriban or use your own</strong>
         </div>
       </div>
     </div>
